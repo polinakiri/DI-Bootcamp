@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f3f4;
+}
+
+h1 {
+  text-align: center;
+  color: #4f5d75;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+
+  background-color: #2d3142;
+  color: aliceblue;
+
+  display: flex;
+  justify-content: center;
+
+  transition-duration: 1s;
+  -moz-transition-duration: 1s; /* Firefox 4 */
+  -webkit-transition-duration: 1s; /* Safari and Chrome */
+  -o-transition-duration: 1s; /* Opera */
+}
+
+p {
+    align-self: center;
+    font-size: 30px;
+}
+
+.fade {
+  opacity: 0.1;
+}
+
+.fade:hover {
+  opacity: 1;
+}
+
+.color:hover {
+  background-color: #ef8354;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.shrink:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.rotate:hover {
+  -webkit-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.circle:hover {
+  border-radius: 20%;
+}
+
+.shadow:hover {
+  box-shadow: 1px 1px #fae0e4, 2px 2px #f7cad0, 3px 3px #f9bec7, 4px 4px #fbb1bd,
+    5px 5px #ff99ac, 6px 6px #ff85a1, 7px 7px #ff7096;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.swing:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.border:hover {
+  box-shadow: inset 0 0 0 17px #ef8354;
+}
