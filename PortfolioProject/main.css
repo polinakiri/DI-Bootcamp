@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0px solid grey;
+    font-family: "Open Sans";
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+
+  .row, .col {
+    border: 1px solid green;
+  }
+
+  .myphoto {
+    width: 50px;
+  }
