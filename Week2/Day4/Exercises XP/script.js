@@ -59,7 +59,7 @@ function calculateTip () {
     }
 }
 
-//calculateTip();
+calculateTip();
 
 
 // Exercise 3 : Find The Numbers Divisible By 23
@@ -93,8 +93,8 @@ function isDivisible (x) {
 console.log(sum);
 }
 
-// isDivisible(23);
-// isDivisible(45);
+isDivisible(23);
+isDivisible(45);
 
 
 // Exercise 4 : Shopping List
@@ -288,4 +288,3 @@ function totalVacationCost () {
 }
 
 totalVacationCost();
-
