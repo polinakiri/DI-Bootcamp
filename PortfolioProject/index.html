@@ -10,20 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link href="./main.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link href="./main.css" rel="stylesheet" />
     <title>Polina Kirillova</title>
   </head>
 
   <body>
     <!--Menu-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a href="./index.html" class="nav-brand">POLINA</a>
+    <nav class="navbar navbar-expand-md navbar-light m-auto">
+      <a href="./index.html" class="nav-brand ms-5">POLINA</a>
       <!--Collapse menu-->
       <button
         class="navbar-toggler"
@@ -37,7 +37,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto me-5">
           <li class="nav-item">
             <a href="./index.html" class="nav-link">Home</a>
           </li>
@@ -51,21 +51,29 @@
       </div>
     </nav>
     <!--Main content-->
-    <main class="container">
+    <main class="container-fluid">
       <!--Section about me and photo-->
       <section class="row">
-        <div class="col">
-          <h1>Hi! I'm Polina, a Full Stack Developer based in Israel.</h1>
+        <div class="border border-2 border-success col-lg-7 m-4 p-5 rounded-4 text-success" id="about-me">
+          <h1 class="mb-3">Hi! I'm Polina, a Full Stack Developer based in Israel.</h1>
           <!--Skills icons-->
-          <div></div>
+          <div class="mb-3 text-muted">
+            <h3>My Skills</h3>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
           <!--Contact me and social media links-->
-          <div>
-            <a href="polina.a.kiri@gmail.com">Contact me</a>
-            <a href="linkedin.com/in/polina-kirillova-594747237">Linkedin</a>
-            <a href="https://github.com/polinakiri">GitHub</a>
+          <div class="links d-flex align-items-center">
+            <a href="polina.a.kiri@gmail.com" class="btn btn-success me-3">Contact me</a>
+            <a href="linkedin.com/in/polina-kirillova-594747237"><i class="fa-brands fa-linkedin me-3"></i></a>
+            <a href="https://github.com/polinakiri"><i class="fa-brands fa-square-github"></i></a>
           </div>
         </div>
-        <img src="./images/myphoto.jpg" alt="my photo" class="col myphoto" />
+        <div class="photo col-lg-4 m-4 rounded-4 bg-success">
+        <img src="./images/sticker.webp" alt="my photo" class="rounded-4" style="width: 50%"/>
+        </div>
       </section>
       <!--Section with projects-->
       <section id="projects">
@@ -87,5 +95,6 @@
   </body>
   <footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3ea6615097.js" crossorigin="anonymous"></script>
   </footer>
 </html>

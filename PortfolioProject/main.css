@@ -7,3 +7,32 @@
     text-decoration: none;
     scroll-behavior: smooth;
   }
+
+section {
+  border: 0px solid green;
+}
+
+#about-me {
+  height: ;
+  border: 0px solid red;
+}
+
+.photo {
+  border: 1px solid black;
+}
+
+.row {
+  border: 0px solid blue;
+}
+
+.fa-brands {
+  font-size: 2.4rem;
+}
+
+.links {
+  border: 0px solid red;
+}
+
+nav>a:link, nav>a:visited {
+  color: black;
+}
