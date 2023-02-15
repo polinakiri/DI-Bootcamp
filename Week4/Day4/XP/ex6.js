@@ -38,12 +38,12 @@ class Mamal extends Animal {
     constructor (name, type, color) {
         super(name, type, color);
     }
-    sound(sound) {
-        return `${sound} I'm a ${this.type}, named ${this.name} and I'm ${color}.`
+    sound(s) {
+        return `${s} I'm a ${this.type}, named ${this.name} and I'm ${this.color}.`
     }
     
 }
 
-const farmerCow = new Mamal('Mary', 'cow', 'white', 'mooo');
+const farmerCow = new Mamal('Mary', 'cow', 'white');
 
-console.log(farmerCow);
+console.log(farmerCow.sound("Moo"));
